@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+* a {
+    text-decoration: none;
+}
+
+* li {
+    list-style: none;
+}
+
+.container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("https://www.denofgeek.com/wp-content/uploads/2017/06/war_for_the_planet_of_the_apes_review_caesar.jpg?resize=768%2C432sd");
+    background-size: cover;
+    background-position: center;
+}
+
+.navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+}
+
+.navBar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul li {
+    padding: 0 25px;
+}
+
+.navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.phuket {
+    color: #fff;
+    padding: 25px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.card .box1,
+.box2,
+.box3,
+.box4 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.box1 {
+    background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/16/17/war-for-the-planet-of-the-apes.jpg?quality=75&width=1200&auto=webp");
+}
+
+.box2 {
+    background-image: url("https://i.guim.co.uk/img/media/674c2a4ecd693d3cab1c7c76d29e458a4f7f4e29/218_0_2032_1219/master/2032.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=2010936c72bcdd2c4854dbaaa6c3fee1");
+}
+
+.box3 {
+    background-image: url("https://www.beartai.com/wp-content/uploads/2016/12/ape-war.jpg");
+}
+
+.box4 {
+    background-image: url("https://assets3.thrillist.com/v1/image/2680042/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70");
+}
+
+.phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.txt h1 {
+    font-size: 7rem;
+}
+
+.phuket p {
+    opacity: 0.4;
+}
+
+.tnx h2 i {
+    color: #fd7e13;
+}
+
+.card div {
+    transition: 0.5s;
+}
+
+.card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
